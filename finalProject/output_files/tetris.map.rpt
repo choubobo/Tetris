@@ -1,0 +1,308 @@
+Analysis & Synthesis report for tetris
+Tue Dec 10 11:19:17 2019
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Tue Dec 10 11:19:17 2019           ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                      ; tetris                                      ;
+; Top-level Entity Name              ; skeleton                                    ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; skeleton           ; tetris             ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Tue Dec 10 11:19:00 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tetris -c tetris
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file skeleton.v
+    Info (12023): Found entity 1: skeleton File: F:/Duke/550/finalProject/skeleton.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cpu.v
+    Info (12023): Found entity 1: CPU File: F:/Duke/550/finalProject/CPU.v Line: 12
+Info (12021): Found 1 design units, including 1 entities, in source file ps2_controller.v
+    Info (12023): Found entity 1: PS2_Controller File: F:/Duke/550/finalProject/PS2_Controller.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file myprocessor.v
+    Info (12023): Found entity 1: myprocessor File: F:/Duke/550/finalProject/myprocessor.v Line: 50
+Warning (10463): Verilog HDL Declaration warning at vga_controller.v(23): "static" is SystemVerilog-2005 keyword File: F:/Duke/550/finalProject/vga_controller.v Line: 23
+Warning (10229): Verilog HDL Expression warning at vga_controller.v(270): truncated literal to match 8 bits File: F:/Duke/550/finalProject/vga_controller.v Line: 270
+Warning (10229): Verilog HDL Expression warning at vga_controller.v(280): truncated literal to match 8 bits File: F:/Duke/550/finalProject/vga_controller.v Line: 280
+Warning (10229): Verilog HDL Expression warning at vga_controller.v(288): truncated literal to match 8 bits File: F:/Duke/550/finalProject/vga_controller.v Line: 288
+Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.v
+    Info (12023): Found entity 1: vga_controller File: F:/Duke/550/finalProject/vga_controller.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ps2_interface.v
+    Info (12023): Found entity 1: PS2_Interface File: F:/Duke/550/finalProject/PS2_Interface.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(59): created implicit net for "inclock" File: F:/Duke/550/finalProject/skeleton.v Line: 59
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(109): created implicit net for "DLY_RST" File: F:/Duke/550/finalProject/skeleton.v Line: 109
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(110): created implicit net for "VGA_CTRL_CLK" File: F:/Duke/550/finalProject/skeleton.v Line: 110
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(110): created implicit net for "AUD_CTRL_CLK" File: F:/Duke/550/finalProject/skeleton.v Line: 110
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(119): created implicit net for "iVGA_CLK" File: F:/Duke/550/finalProject/skeleton.v Line: 119
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(119): created implicit net for "iRST_n" File: F:/Duke/550/finalProject/skeleton.v Line: 119
+Info (12127): Elaborating entity "skeleton" for the top level hierarchy
+Warning (10034): Output port "VGA_SYNC" at skeleton.v(22) has no driver File: F:/Duke/550/finalProject/skeleton.v Line: 22
+Info (12128): Elaborating entity "PS2_Interface" for hierarchy "PS2_Interface:myps2" File: F:/Duke/550/finalProject/skeleton.v Line: 69
+Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2" File: F:/Duke/550/finalProject/PS2_Interface.v Line: 28
+Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: F:/Duke/550/finalProject/skeleton.v Line: 118
+Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(26): object "over" assigned a value but never read File: F:/Duke/550/finalProject/vga_controller.v Line: 26
+Warning (10036): Verilog HDL or VHDL warning at vga_controller.v(40): object "ps2_out_helper" assigned a value but never read File: F:/Duke/550/finalProject/vga_controller.v Line: 40
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(75): truncated value with size 32 to match size of target (24) File: F:/Duke/550/finalProject/vga_controller.v Line: 75
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(76): truncated value with size 32 to match size of target (24) File: F:/Duke/550/finalProject/vga_controller.v Line: 76
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(92): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 92
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(93): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 93
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(199): truncated value with size 32 to match size of target (3) File: F:/Duke/550/finalProject/vga_controller.v Line: 199
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(272): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 272
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(273): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 273
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(282): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 282
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(283): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 283
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(296): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 296
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(297): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 297
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(298): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 298
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(302): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 302
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(303): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 303
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(304): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 304
+Info (10264): Verilog HDL Case Statement information at vga_controller.v(291): all case item expressions in this case statement are onehot File: F:/Duke/550/finalProject/vga_controller.v Line: 291
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(316): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 316
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(317): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 317
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(318): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 318
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(319): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 319
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(325): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 325
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(326): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 326
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(327): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 327
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(328): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 328
+Info (10264): Verilog HDL Case Statement information at vga_controller.v(313): all case item expressions in this case statement are onehot File: F:/Duke/550/finalProject/vga_controller.v Line: 313
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(338): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 338
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(339): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 339
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(340): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 340
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(342): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 342
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(346): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 346
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(348): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 348
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(350): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 350
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(351): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 351
+Info (10264): Verilog HDL Case Statement information at vga_controller.v(335): all case item expressions in this case statement are onehot File: F:/Duke/550/finalProject/vga_controller.v Line: 335
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(361): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 361
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(362): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 362
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(363): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 363
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(364): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 364
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(368): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 368
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(369): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 369
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(370): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 370
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(373): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 373
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(379): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 379
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(380): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 380
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(381): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 381
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(382): truncated value with size 32 to match size of target (4) File: F:/Duke/550/finalProject/vga_controller.v Line: 382
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(417): truncated value with size 32 to match size of target (19) File: F:/Duke/550/finalProject/vga_controller.v Line: 417
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:myProcessor" File: F:/Duke/550/finalProject/skeleton.v Line: 119
+Info (12128): Elaborating entity "myprocessor" for hierarchy "CPU:myProcessor|myprocessor:my_processor" File: F:/Duke/550/finalProject/CPU.v Line: 86
+Error (12006): Node instance "div" instantiates undefined entity "pll". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/skeleton.v Line: 59
+Error (12006): Node instance "myprocessor" instantiates undefined entity "processor". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/skeleton.v Line: 66
+Error (12006): Node instance "PS2_Data_In" instantiates undefined entity "Altera_UP_PS2_Data_In". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/PS2_Controller.v Line: 248
+Error (12006): Node instance "PS2_Command_Out" instantiates undefined entity "Altera_UP_PS2_Command_Out". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/PS2_Controller.v Line: 268
+Error (12006): Node instance "mylcd" instantiates undefined entity "lcd". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/skeleton.v Line: 90
+Error (12006): Node instance "hex1" instantiates undefined entity "Hexadecimal_To_Seven_Segment". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/skeleton.v Line: 93
+Error (12006): Node instance "hex2" instantiates undefined entity "Hexadecimal_To_Seven_Segment". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/skeleton.v Line: 94
+Error (12006): Node instance "hex3" instantiates undefined entity "Hexadecimal_To_Seven_Segment". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/skeleton.v Line: 97
+Error (12006): Node instance "hex4" instantiates undefined entity "Hexadecimal_To_Seven_Segment". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/skeleton.v Line: 98
+Error (12006): Node instance "hex5" instantiates undefined entity "Hexadecimal_To_Seven_Segment". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/skeleton.v Line: 99
+Error (12006): Node instance "hex6" instantiates undefined entity "Hexadecimal_To_Seven_Segment". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/skeleton.v Line: 100
+Error (12006): Node instance "hex7" instantiates undefined entity "Hexadecimal_To_Seven_Segment". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/skeleton.v Line: 101
+Error (12006): Node instance "hex8" instantiates undefined entity "Hexadecimal_To_Seven_Segment". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/skeleton.v Line: 102
+Error (12006): Node instance "r0" instantiates undefined entity "Reset_Delay". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/skeleton.v Line: 109
+Error (12006): Node instance "p1" instantiates undefined entity "VGA_Audio_PLL". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/skeleton.v Line: 110
+Error (12006): Node instance "LTM_ins" instantiates undefined entity "video_sync_generator". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/vga_controller.v Line: 406
+Error (12006): Node instance "img_data_inst" instantiates undefined entity "img_data". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/vga_controller.v Line: 431
+Error (12006): Node instance "img_index_inst" instantiates undefined entity "img_index". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/vga_controller.v Line: 439
+Error (12006): Node instance "two_divider" instantiates undefined entity "my_dffe". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/CPU.v Line: 19
+Error (12006): Node instance "four_divider" instantiates undefined entity "my_dffe". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/CPU.v Line: 20
+Error (12006): Node instance "my_imem" instantiates undefined entity "imem2". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/CPU.v Line: 35
+Error (12006): Node instance "my_dmem" instantiates undefined entity "dmem2". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/CPU.v Line: 50
+Error (12006): Node instance "my_regfile" instantiates undefined entity "regfile". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/CPU.v Line: 61
+Error (12006): Node instance "mux16" instantiates undefined entity "MUX5". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 118
+Error (12006): Node instance "my_decoder" instantiates undefined entity "dec5to32". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 151
+Error (12006): Node instance "my_control" instantiates undefined entity "control". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 153
+Error (12006): Node instance "mux4" instantiates undefined entity "MUX32". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 162
+Error (12006): Node instance "alu1" instantiates undefined entity "alu". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 168
+Error (12006): Node instance "mux1" instantiates undefined entity "MUX5". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 189
+Error (12006): Node instance "mux2" instantiates undefined entity "MUX5". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 190
+Error (12006): Node instance "mux3" instantiates undefined entity "MUX5". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 191
+Error (12006): Node instance "mux14" instantiates undefined entity "MUX5". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 192
+Error (12006): Node instance "mux13" instantiates undefined entity "MUX5". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 193
+Error (12006): Node instance "mux15" instantiates undefined entity "MUX5". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 194
+Error (12006): Node instance "alu2" instantiates undefined entity "alu". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 203
+Error (12006): Node instance "mux5" instantiates undefined entity "MUX12". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 211
+Error (12006): Node instance "mux6" instantiates undefined entity "MUX12". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 212
+Error (12006): Node instance "mux7" instantiates undefined entity "MUX32". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 217
+Error (12006): Node instance "mux8" instantiates undefined entity "MUX32". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 218
+Error (12006): Node instance "mux9" instantiates undefined entity "MUX32". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 219
+Error (12006): Node instance "mux_4to1" instantiates undefined entity "mux4to1". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 223
+Error (12006): Node instance "mux12" instantiates undefined entity "MUX32". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 225
+Error (12006): Node instance "mux10" instantiates undefined entity "MUX12". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 235
+Error (12006): Node instance "mux11" instantiates undefined entity "MUX12". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 236
+Error (12006): Node instance "my_PC" instantiates undefined entity "PC". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 242
+Error (12006): Node instance "alu3" instantiates undefined entity "alu". Make sure that the required user library paths are specified correctly. If the project contains EDIF Input Files (.edf), make sure that you specified the EDA synthesis tool settings correctly. Otherwise, define the specified entity or change the calling entity. The Altera Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: F:/Duke/550/finalProject/myprocessor.v Line: 249
+Info (144001): Generated suppressed messages file F:/Duke/550/finalProject/output_files/tetris.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 46 errors, 58 warnings
+    Error: Peak virtual memory: 4946 megabytes
+    Error: Processing ended: Tue Dec 10 11:19:17 2019
+    Error: Elapsed time: 00:00:17
+    Error: Total CPU time (on all processors): 00:00:41
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in F:/Duke/550/finalProject/output_files/tetris.map.smsg.
+
+

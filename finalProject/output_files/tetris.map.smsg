@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at skeleton.v(66): object "myprocessor" differs only in case from object "myProcessor" in the same scope File: F:/Duke/550/finalProject/skeleton.v Line: 66
+Warning (10268): Verilog HDL information at vga_controller.v(447): always construct contains both blocking and non-blocking assignments File: F:/Duke/550/finalProject/vga_controller.v Line: 447
